@@ -9,7 +9,7 @@ namespace ConsoleApp1
             Class1 obj = new Class1();
             obj.Length();
             obj.Comparison();
-
+            obj.GreaterAndLessor();
 
         }
     }   } 

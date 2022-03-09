@@ -87,6 +87,50 @@ namespace ConsoleApp1
             }
 
         }
+        public void GreaterAndLessor()
+        {
+            double x1, x2, y1, y2;
+            double g1, g2, h1, h2;
+
+            Console.WriteLine("Enter co-ordinate of line1");
+            Console.WriteLine("Enter co-ordinate of (x1,y1):");
+            x1 = double.Parse(Console.ReadLine());
+            y1 = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter co-ordinate of line1");
+            Console.WriteLine("Enter co-ordinate of (x2,y2):");
+            x2 = double.Parse(Console.ReadLine());
+            y2 = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter co-ordinate of line2");
+            Console.WriteLine("Enter co-ordiante of (g1,h1):");
+            g1 = double.Parse(Console.ReadLine());
+            h1 = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter co-ordinate of line2");
+            Console.WriteLine("Enter co-ordinate of(g2,h2)");
+            g2 = double.Parse(Console.ReadLine());
+            h2 = double.Parse(Console.ReadLine());
+
+
+            double Length1 = (((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1)));
+            double Length2 = (((g2 - g1) * (g2 - g1) + (h2 - h1) * (h2 - h1)));
+
+            if (Length1 == Length2)
+            {
+                Console.WriteLine("Two line are equal");
+            }
+            else if (Length1 > Length2)
+            {
+                Console.WriteLine("The Length of line1 is greater than line1");
+            }
+            else if (Length1 < Length2)
+            {
+                Console.WriteLine("The length of line1 is less than line1");
+                Console.ReadLine();
+            }
+
+        }
 
     }
 }
