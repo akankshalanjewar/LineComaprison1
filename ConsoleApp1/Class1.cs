@@ -46,6 +46,48 @@ namespace ConsoleApp1
 
 
         }
+        public void Comparison()
+        {
+            double x1, x2, y1, y2;
+            double g1, g2, h1, h2;
+
+            Console.WriteLine("Enter co-ordinate of line1");
+            Console.WriteLine("Enter co-ordinate of (x1,y1):");
+            x1 = double.Parse(Console.ReadLine());
+            y1 = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter co-ordinate of line1");
+            Console.WriteLine("Enter co-ordinate of (x2,y2):");
+            x2 = double.Parse(Console.ReadLine());
+            y2 = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter co-ordinate of line2");
+            Console.WriteLine("Enter co-ordinate of (g1,h1):");
+            g1 = double.Parse(Console.ReadLine());
+            h1 = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter co-ordinate of line2");
+            Console.WriteLine("Enter co-ordinate of (g2,h2):");
+            g2 = double.Parse(Console.ReadLine());
+            h2 = double.Parse(Console.ReadLine());
+
+            double Length1 = Math.Sqrt(((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1)));
+            double Length2 = Math.Sqrt(((g2 - g1) * (g2 - g1) + (h2 - h1) * (h2 - h1)));
+
+            Console.WriteLine("Length of line1:" + Length1);
+            Console.WriteLine("Lenght of line2:" + Length2);
+
+            if (Length1 == Length2)
+            {
+                Console.WriteLine("Two line are equal");
+            }
+            else
+            {
+                Console.WriteLine("Two line are not equal");
+            }
+
+        }
+
     }
 }
 
